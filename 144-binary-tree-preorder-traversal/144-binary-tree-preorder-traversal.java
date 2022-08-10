@@ -23,7 +23,6 @@ class Solution {
     
     public void preorderTraversalUtil(TreeNode root) {
         if(root ==null) return;
-		//visit root, left, right -> pre order traversal
         ansList.add(root.val);
         preorderTraversalUtil(root.left);
         preorderTraversalUtil(root.right);
