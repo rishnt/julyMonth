@@ -37,17 +37,17 @@ class Solution
     public static boolean find3Numbers(int A[], int n, int X) { 
     Arrays.sort(A);
     int sum=0;
-        for(int i=0;i<n-1;i++){
+        for(int i=0;i<n;i++){
            
             int l=i+1;
             int r=n-1;
-            while(l<r){
+            while(l<r&&l<n){
                sum=A[i]+A[l]+A[r];
                 if(sum==X){
                     return true;
                 }
                 
-              if(sum>X){
+               if(sum>X){
                     r--;
                 }
                 else{
